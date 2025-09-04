@@ -15,11 +15,17 @@ export function MyAwesomeApp () {
 
     return (
         <>
-        <h1>  {nombre} </h1>
-        <h1>  {apellido}  </h1>
-        <p> {games.join(', ')} </p>
-        <h1> {activo ? 'activo': 'no activo'}  </h1>
-        <p> { JSON.stringify(direccion)} </p>
+        <h1>{nombre} </h1>
+        <h1>{apellido}  </h1>
+        <p>{games.join(', ')} </p>
+        <h1>{activo ? 'activo': 'no activo'}  </h1>
+        <p  style={{background: 'red',
+        color: 'yellow',
+        borderRadius: '20px',
+        padding: '30px',
+        height: '100px',
+        }}>  
+            { JSON.stringify(direccion)} </p>
         </>
     )
 }
